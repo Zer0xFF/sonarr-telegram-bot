@@ -1,4 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
+
 from telegram.ext import Updater, CommandHandler
 from SonarrAPI.sonarr.sonarr_api import SonarrAPI
 from datetime import datetime, timedelta

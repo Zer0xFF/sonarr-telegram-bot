@@ -1,0 +1,14 @@
+[Unit]
+Description=Sonarr Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+User=%s
+WorkingDirectory=%s
+ExecStart=%s/bot.py
+Restart=always
+StartLimitInterval=0
+
+[Install]
+WantedBy=multi-user.target
